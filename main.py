@@ -143,7 +143,7 @@ def print_tree(node: list, depth: int = 0)-> None:
 			print(f"{"\t" * depth}{i}")
 
 def main()-> None:
-	node = scanner(tokenizer("(42)"))
+	node = scanner(tokenizer("78 + 12 + 23 / 24 / 27 - 28 - 19"))
 	print_tree(node)
 	print("***")
 	print(evaluate(node))
